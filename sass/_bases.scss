@@ -8,6 +8,13 @@
 	font-family:$tipografia;
 	margin:$centrar_div;
 
+	h2{
+		@include titulo (principal);
+		}
+	h3{
+		@include titulo (secundario);
+	}
+
 	header{
 		padding: 40px 0 60px 0;
 		color: $gris_gral;
@@ -24,9 +31,21 @@
 	}
 
 	#podcast{
+		@include separador;
+		
 		.imagen{
 			width: $screen_full;
-			@include ajust_img(full);
+			@include ajust_img (full);
+		}
+		.subtitulo{
+			@include sub_title;
+		}
+		p{
+			@include parrafos(podcast);
+		}
+		.tema{
+			@include temas ();
 		}
 	}
+
 }

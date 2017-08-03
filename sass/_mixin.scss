@@ -36,3 +36,41 @@
 		top: 15%;
 	}
 }
+
+@mixin titulo ($title){
+	@if $title == principal {
+		font-weight: $ligther;
+		font-size: $size_principal;
+		padding: 20px 0;
+	} @else if $title == secundario {
+		font-weight: $ligther;
+		font-size: $size_secundario;
+		padding: 10px 0
+	}
+}
+
+@mixin sub_title(){
+	padding-bottom: 20px;
+	font-weight: $bolder;
+	font-size: $size_subtitle;
+}
+
+@mixin parrafos($parrafo){
+	@if $parrafo == podcast{
+	font-size: $size_parrafos;
+	font-weight: $ligther;
+	width: $screen_especial;
+	line-height: $interlinea;
+	padding: 10px 0;
+	}
+}
+
+@mixin temas (){
+	font-family: $tipografia_mono;
+}
+
+@mixin separador {
+	padding: 20px 0;
+	border-bottom: solid 2px $color_linea;
+	margin-bottom: 20px;
+}
