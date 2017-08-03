@@ -1,17 +1,28 @@
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  box-sizing: border-box; }
 
 #contenedor {
   width: 90%;
   font-family: "Roboto", sans-serif;
   margin: 0 auto; }
+  #contenedor .columna-izq {
+    width: 47%;
+    float: left;
+    margin-right: 20px; }
+  #contenedor .columna-der {
+    width: 47%;
+    float: right; }
+  #contenedor .tema, #contenedor .fecha {
+    font-family: "Inconsolata", monospace;
+    color: #5f6368; }
   #contenedor h2 {
     font-weight: 300;
     font-size: 33px;
     padding: 20px 0; }
   #contenedor h3 {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 20px;
     padding: 10px 0; }
   #contenedor header {
@@ -52,8 +63,36 @@
       font-weight: 300;
       width: 65%;
       line-height: 22px;
+      color: #414549;
       padding: 10px 0; }
-    #contenedor #podcast .tema {
-      font-family: "Inconsolata", monospace; }
+  #contenedor #newsfeed h2 {
+    font-size: 25px;
+    text-align: left; }
+  #contenedor #newsfeed p {
+    font-size: 15px;
+    font-weight: 300;
+    width: 100%;
+    line-height: 22px;
+    color: #414549;
+    padding-bottom: 30px; }
+  #contenedor #newsfeed .img-news {
+    width: 100%; }
+    #contenedor #newsfeed .img-news img {
+      width: 100%; }
+  #contenedor #newsfeed .newsletter {
+    background-color: whitesmoke;
+    padding: 10px;
+    height: 80px; }
+    #contenedor #newsfeed .newsletter p {
+      padding: 0;
+      font-weight: normal;
+      color: black; }
+    #contenedor #newsfeed .newsletter a {
+      text-decoration: none;
+      color: #4285f4; }
+    #contenedor #newsfeed .newsletter .textos {
+      float: left; }
+    #contenedor #newsfeed .newsletter .icono {
+      float: right; }
 
 /*# sourceMappingURL=main.css.map */

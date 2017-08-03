@@ -1,12 +1,24 @@
 *{
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
 }
 
 #contenedor{
 	width:90%;
 	font-family:$tipografia;
 	margin:$centrar_div;
+
+	.columna-izq{
+		@include columna(izquierda);
+	}
+	.columna-der{
+		@include columna(derecha);
+	}
+
+	.tema, .fecha{
+		@include temas;
+	}
 
 	h2{
 		@include titulo (principal);
@@ -32,7 +44,7 @@
 
 	#podcast{
 		@include separador;
-		
+
 		.imagen{
 			width: $screen_full;
 			@include ajust_img (full);
@@ -43,8 +55,36 @@
 		p{
 			@include parrafos(podcast);
 		}
-		.tema{
-			@include temas ();
+	}
+
+	#newsfeed{
+		h2{
+			font-size: $size_intermedio;
+			text-align: left;
+		}
+		p{
+			@include parrafos(newsfeed);
+		}
+		.img-news{
+			width: $screen_full;
+			@include ajust_img (full);
+		}
+		.newsletter{
+			background-color: whitesmoke;
+			padding: 10px;
+			height: 80px;
+			p{
+				@include parrafos (newsletter);
+			}
+			a{
+				@include links;
+			}
+			.textos{
+				float: left;
+			}
+			.icono{
+				float: right;
+			}
 		}
 	}
 

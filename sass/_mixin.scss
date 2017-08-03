@@ -43,7 +43,7 @@
 		font-size: $size_principal;
 		padding: 20px 0;
 	} @else if $title == secundario {
-		font-weight: $ligther;
+		font-weight: $normal;
 		font-size: $size_secundario;
 		padding: 10px 0
 	}
@@ -61,16 +61,48 @@
 	font-weight: $ligther;
 	width: $screen_especial;
 	line-height: $interlinea;
+	color: $color_parrafos;
 	padding: 10px 0;
+
+	} @else if $parrafo == newsfeed{
+		font-size: $size_parrafos;
+		font-weight: $ligther;
+		width: $screen_full;
+		line-height: $interlinea;
+		color: $color_parrafos;
+		padding-bottom: 30px;
+
+	} @else if $parrafo == newsletter{
+		padding:0;
+		font-weight: normal;
+		color: black;
 	}
 }
 
 @mixin temas (){
 	font-family: $tipografia_mono;
+	color: $color_fecha;
 }
 
 @mixin separador {
 	padding: 20px 0;
 	border-bottom: solid 2px $color_linea;
 	margin-bottom: 20px;
+}
+
+@mixin columna($lado){
+	@if $lado == izquierda{
+		width: $screen_half;
+		float: left;
+		margin-right: 20px;
+
+	} @else if $lado == derecha{
+		width: $screen_half;
+		float: right;
+	}
+}
+
+@mixin links(){
+		text-decoration: none;
+		color: $color_linea;
 }
