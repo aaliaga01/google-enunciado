@@ -1,1 +1,38 @@
+@mixin bullet(){
+	ul{
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 14px;
+		text-align: $centrar_gral;
+		padding: 15px 0;
+		li{
+			display:inline-block;
+			list-style-type: none;
+			padding: 0 20px;
+		}
+	}
+}
 
+@mixin ajust_img($full){
+	@if $full == full{
+		img{
+			width: $screen_full;
+		}
+	}
+}
+
+@mixin ajust_div($clase){
+	@if $clase == logo {
+		width: 50%;
+		text-align: $centrar_gral;
+		margin: $centrar_div;
+	}
+}
+
+@mixin flotar_der ($icono){
+	@if $icono == search {
+		position: absolute;
+		right: 5%;
+		top: 15%;
+	}
+}

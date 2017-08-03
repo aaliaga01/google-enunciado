@@ -3,3 +3,30 @@
 	margin: 0;
 }
 
+#contenedor{
+	width:90%;
+	font-family:$tipografia;
+	margin:$centrar_div;
+
+	header{
+		padding: 40px 0 60px 0;
+		color: $gris_gral;
+
+		.logo{
+			@include ajust_div(logo);
+		}
+		.search{
+			@include flotar_der(search);
+		}
+		nav{
+			@include bullet;
+		}
+	}
+
+	#podcast{
+		.imagen{
+			width: $screen_full;
+			@include ajust_img(full);
+		}
+	}
+}
