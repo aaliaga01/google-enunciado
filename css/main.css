@@ -129,5 +129,58 @@
       padding: 9px 0 0 5px; }
     #contenedor #articulos .icono2 {
       float: left; }
+  #contenedor footer {
+    height: 150px;
+    font-weight: 300; }
+    #contenedor footer h4 {
+      font-size: 13px;
+      padding: 10px 0; }
+    #contenedor footer p {
+      padding: 0;
+      font-weight: 300;
+      font-size: 13px;
+      color: #414549; }
+    #contenedor footer .columna-izq-foot {
+      width: 65%;
+      float: left; }
+    #contenedor footer .columna-der-foot {
+      width: 30%;
+      float: right; }
+    #contenedor footer .columna-der-footer {
+      font-size: 13px;
+      width: 30%;
+      float: right;
+      margin: 0 auto; }
+      #contenedor footer .columna-der-footer ul li {
+        list-style-type: none; }
+    #contenedor footer .columna-izq-2 {
+      width: 30%;
+      float: left; }
+    #contenedor footer .columna-der-2 {
+      width: 30%;
+      float: left; }
+
+#piedepagina {
+  padding: 20px 0;
+  border-top: solid 2px whitesmoke;
+  margin-bottom: 40px; }
+  #piedepagina .columna-izq {
+    width: 47%;
+    float: left;
+    margin-right: 20px; }
+    #piedepagina .columna-izq img {
+      width: 5%;
+      margin-left: 60px; }
+  #piedepagina .columna-der {
+    width: 47%;
+    float: right;
+    padding: 0;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    color: #5f6368;
+    text-align: right;
+    margin-right: 60px;
+    margin-top: -30px; }
 
 /*# sourceMappingURL=main.css.map */

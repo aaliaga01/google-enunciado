@@ -82,11 +82,28 @@
 		padding:0;
 		font-weight: normal;
 		color: $color_parrafos;
+
 	} @else if $parrafo == articulos{
 		padding:0;
 		font-weight: $ligther;
 		font-size: $size_parrafos;
 		color: $color_parrafos;
+
+	} @else if $parrafo == pie-pagina{
+		padding: 0;
+		font-weight: $ligther;
+		font-size: $size_footer;
+		color: $color_parrafos;
+
+	} @else if $parrafo == terms{
+		padding: 0;
+		font-weight: $ligther;
+		font-family:$tipografia;
+		font-size: $size_footer;
+		color: $color_fecha;
+		text-align:right;
+		margin-right: 60px;
+		margin-top: -30px;
 	}
 }
 
@@ -97,10 +114,17 @@
 	margin-bottom: 60px;
 }
 
-@mixin separador {
+@mixin separador ($tag){
+	@if $tag == azul {
 	padding: 20px 0;
 	border-bottom: solid 2px $color_linea;
 	margin-bottom: 40px;
+	}
+	@else if $tag == gris {
+	padding: 20px 0;
+	border-top: solid 2px $color_grisclaro;
+	margin-bottom: 40px;
+	}
 }
 
 @mixin columna($lado){
@@ -116,6 +140,31 @@
 }
 
 @mixin links(){
-		text-decoration: none;
-		color: $color_linea;
+	text-decoration: none;
+	color: $color_linea;
+}
+
+@mixin col_footer($lado){
+	@if $lado == foot-izq{
+		width: $screen_especial;
+		float: left;
+
+	} @else if $lado == foot-der{
+		width: $screen_especial3;
+		float: right;
+
+	} @else if $lado == foot-izq-esp{
+		width: $screen_especial3;
+		float: left;
+
+	} @else if $lado == foot-der-last{
+		width: $screen_especial3;
+		float: right;
+		margin: 0 auto;
+		ul{
+			li{
+				list-style-type: none;
+			}
+		}
+	}
 }

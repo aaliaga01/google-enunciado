@@ -43,7 +43,7 @@
 	}
 
 	#podcast{
-		@include separador;
+		@include separador(azul);
 
 		.imagen{
 			width: $screen_full;
@@ -58,8 +58,9 @@
 	}
 
 	#newsfeed{
-		@include separador;
+		@include separador(azul);
 		height: 750px;
+		
 		h2{
 			font-size: $size_intermedio;
 			text-align: left;
@@ -91,7 +92,7 @@
 	}
 
 	#articulos{
-		@include separador;
+		@include separador(azul);
 		height: 1680px;		
 
 		h3{
@@ -113,5 +114,49 @@
 		.icono2{
 			float: left;
 		}
+	}
+
+	footer{
+		height: 150px;
+		font-weight: $ligther;
+ 		h4{
+ 			font-size: $size_footer;
+ 			padding: 10px 0;
+		}
+		p{
+			@include parrafos (pie-pagina);
+
+		}
+		.columna-izq-foot{
+			@include col_footer (foot-izq);
+		}
+		.columna-der-foot{
+			@include col_footer (foot-der);
+		}
+		.columna-der-footer{
+ 			font-size: $size_footer;
+			@include col_footer (foot-der-last);
+		}
+		.columna-izq-2{
+			@include col_footer (foot-izq-esp);
+		}
+		.columna-der-2{
+			@include col_footer (foot-izq-esp);
+		}
+	}
+}
+
+#piedepagina{
+	@include separador (gris);
+	.columna-izq{
+		@include columna (izquierda);
+		img{
+			width: 5%;
+			margin-left: 60px;
+		}
+	}
+	.columna-der{
+		@include columna (derecha);
+		@include parrafos (terms);
 	}
 }
