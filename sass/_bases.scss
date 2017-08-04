@@ -58,6 +58,8 @@
 	}
 
 	#newsfeed{
+		@include separador;
+		height: 750px;
 		h2{
 			font-size: $size_intermedio;
 			text-align: left;
@@ -88,4 +90,28 @@
 		}
 	}
 
+	#articulos{
+		@include separador;
+		height: 1680px;		
+
+		h3{
+			@include titulo (articulo);
+		}
+		.imagen{
+			width: $screen_full;
+			@include ajust_img (full);
+		}
+		.parrafo{
+			@include parrafos (articulos);
+			margin-bottom: 20px;
+			}
+		.tema2{
+			@include temas;
+			display: inline-block;
+			padding: 9px 0 0 5px;
+		}
+		.icono2{
+			float: left;
+		}
+	}
 }

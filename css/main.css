@@ -16,7 +16,9 @@
     float: right; }
   #contenedor .tema, #contenedor .fecha {
     font-family: "Inconsolata", monospace;
-    color: #5f6368; }
+    color: #5f6368;
+    font-size: 15px;
+    margin-bottom: 60px; }
   #contenedor h2 {
     font-weight: 300;
     font-size: 33px;
@@ -49,7 +51,7 @@
   #contenedor #podcast {
     padding: 20px 0;
     border-bottom: solid 2px #4285f4;
-    margin-bottom: 20px; }
+    margin-bottom: 40px; }
     #contenedor #podcast .imagen {
       width: 100%; }
       #contenedor #podcast .imagen img {
@@ -65,34 +67,67 @@
       line-height: 22px;
       color: #414549;
       padding: 10px 0; }
-  #contenedor #newsfeed h2 {
-    font-size: 25px;
-    text-align: left; }
-  #contenedor #newsfeed p {
-    font-size: 15px;
-    font-weight: 300;
-    width: 100%;
-    line-height: 22px;
-    color: #414549;
-    padding-bottom: 30px; }
-  #contenedor #newsfeed .img-news {
-    width: 100%; }
-    #contenedor #newsfeed .img-news img {
+  #contenedor #newsfeed {
+    padding: 20px 0;
+    border-bottom: solid 2px #4285f4;
+    margin-bottom: 40px;
+    height: 750px; }
+    #contenedor #newsfeed h2 {
+      font-size: 25px;
+      text-align: left; }
+    #contenedor #newsfeed p {
+      font-size: 15px;
+      font-weight: 300;
+      width: 100%;
+      line-height: 22px;
+      color: #414549;
+      padding-bottom: 30px; }
+    #contenedor #newsfeed .img-news {
       width: 100%; }
-  #contenedor #newsfeed .newsletter {
-    background-color: whitesmoke;
-    padding: 10px;
-    height: 80px; }
-    #contenedor #newsfeed .newsletter p {
+      #contenedor #newsfeed .img-news img {
+        width: 100%; }
+    #contenedor #newsfeed .newsletter {
+      background-color: whitesmoke;
+      padding: 10px;
+      height: 80px; }
+      #contenedor #newsfeed .newsletter p {
+        padding: 0;
+        font-weight: normal;
+        color: #414549; }
+      #contenedor #newsfeed .newsletter a {
+        text-decoration: none;
+        color: #4285f4; }
+      #contenedor #newsfeed .newsletter .textos {
+        float: left; }
+      #contenedor #newsfeed .newsletter .icono {
+        float: right; }
+  #contenedor #articulos {
+    padding: 20px 0;
+    border-bottom: solid 2px #4285f4;
+    margin-bottom: 40px;
+    height: 1680px; }
+    #contenedor #articulos h3 {
+      font-weight: 400;
+      font-size: 25px;
+      padding: 10px 0; }
+    #contenedor #articulos .imagen {
+      width: 100%; }
+      #contenedor #articulos .imagen img {
+        width: 100%; }
+    #contenedor #articulos .parrafo {
       padding: 0;
-      font-weight: normal;
-      color: black; }
-    #contenedor #newsfeed .newsletter a {
-      text-decoration: none;
-      color: #4285f4; }
-    #contenedor #newsfeed .newsletter .textos {
+      font-weight: 300;
+      font-size: 15px;
+      color: #414549;
+      margin-bottom: 20px; }
+    #contenedor #articulos .tema2 {
+      font-family: "Inconsolata", monospace;
+      color: #5f6368;
+      font-size: 15px;
+      margin-bottom: 60px;
+      display: inline-block;
+      padding: 9px 0 0 5px; }
+    #contenedor #articulos .icono2 {
       float: left; }
-    #contenedor #newsfeed .newsletter .icono {
-      float: right; }
 
 /*# sourceMappingURL=main.css.map */
